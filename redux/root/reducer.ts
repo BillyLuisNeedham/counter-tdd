@@ -20,3 +20,5 @@ function rootReducer(state = {}, action: Action): Reducer {
                 return (appReducer(state, action))
     }
 }
+
+export default rootReducer
