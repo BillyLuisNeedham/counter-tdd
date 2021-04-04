@@ -3,5 +3,8 @@ const initialState: CounterState = {
 }
 
 export default (state: CounterState = initialState, action: Action) => {
-    
+    switch (action.type) {
+        default:
+            return state
+    }
 }
