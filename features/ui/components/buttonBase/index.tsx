@@ -3,11 +3,12 @@ import { Button } from '@material-ui/core'
 
 interface Props {
     label: string
+    onClick: () => any
 }
 
-export const ButtonBase: React.FC<Props> = ({label}) => {
+export const ButtonBase: React.FC<Props> = ({label, onClick}) => {
     return (
-        <Button variant="contained">{label}</Button>
+        <Button onClick={onClick} variant="contained">{label}</Button>
     )
 }
 
